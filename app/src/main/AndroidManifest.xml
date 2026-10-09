@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HerWatch"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".EnterOTP_Psy"
+            android:exported="false" />
+        <activity
+            android:name=".forgotPass_psy"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDwzzGJTyQN9j99Fuo_BtOaXtx55xTo8FU" />
+
+        <activity
+            android:name=".addselfdef"
+            android:exported="false" />
+        <activity
+            android:name=".viewselfactivity"
+            android:exported="false" />
+        <activity
+            android:name=".VideoPlayerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Addself"
+            android:exported="false" />
+        <activity
+            android:name=".selfpage"
+            android:exported="false" />
+        <activity
+            android:name=".approvedlistfullactivity"
+            android:exported="false" />
+        <activity
+            android:name=".approvedfullactivity"
+            android:exported="false" />
+        <activity
+            android:name=".approvedlistactivity"
+            android:exported="false" />
+        <activity
+            android:name=".Translatactivity"
+            android:exported="false" />
+        <activity
+            android:name=".frdslistactivity"
+            android:exported="false" />
+        <activity
+            android:name=".sos"
+            android:exported="false" />
+        <activity
+            android:name=".Addfriends"
+            android:exported="false" />
+        <activity
+            android:name=".Friendpage"
+            android:exported="false" />
+        <activity
+            android:name=".securefullactivity"
+            android:exported="false" />
+        <activity
+            android:name=".securelistactivity"
+            android:exported="false" />
+        <activity
+            android:name=".confirmationfeefullactivity"
+            android:exported="false" />
+        <activity
+            android:name=".confirmationfeelistactivity"
+            android:exported="false" />
+        <activity
+            android:name=".Gpayactivity2"
+            android:exported="false" />
+        <activity
+            android:name=".patientrecordlistfullactivity"
+            android:exported="false" />
+        <activity
+            android:name=".Laws"
+            android:exported="false" />
+        <activity
+            android:name=".patientrecordlist"
+            android:exported="false" />
+        <activity
+            android:name=".DocbookedFullActivity"
+            android:exported="false" />
+        <activity
+            android:name=".docbookedlistactivity"
+            android:exported="false" />
+        <activity
+            android:name=".DocBooking"
+            android:exported="false" />
+        <activity
+            android:name=".Psychologistfullactivity"
+            android:exported="false" />
+        <activity
+            android:name=".PsychologistActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HeaderSection"
+            android:exported="false" />
+        <activity
+            android:name=".Restpass"
+            android:exported="false" />
+        <activity
+            android:name=".EnterOtp"
+            android:exported="false" />
+        <activity
+            android:name=".Forgotpassword"
+            android:exported="false" />
+        <activity
+            android:name=".Home"
+            android:exported="false"
+            android:label="@string/title_activity_home"
+            android:theme="@style/Theme.HerWatch.NoActionBar" />
+        <activity
+            android:name=".psycologistprofile"
+            android:exported="false" />
+        <activity
+            android:name=".PsycologistHome"
+            android:exported="false" />
+        <activity
+            android:name=".Choose_user"
+            android:exported="false" />
+        <activity
+            android:name=".Psylogin"
+            android:exported="false" />
+        <activity
+            android:name=".Psychologist"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".Register"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

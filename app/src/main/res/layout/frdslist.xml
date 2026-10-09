@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/frds"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/frdsname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="doctore name"
+                android:textColor="#022E42"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/frdsnumber"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="reason"
+                android:textColor="#022E42"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_marginBottom="4dp" />
+            <TextView
+                android:id="@+id/frdstype"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Category"
+                android:textColor="#022E42"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_marginBottom="4dp" />
+
+            <ImageView
+                android:id="@+id/fcall"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:src="@drawable/img_8"
+                android:layout_marginLeft="200dp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

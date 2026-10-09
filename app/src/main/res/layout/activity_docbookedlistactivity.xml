@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".docbookedlistactivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintAnimationEnabled="true"
+            app:helperTextEnabled="true"
+            app:helperText="Type to search...">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/previousSearch"
+                android:layout_height="wrap_content"
+                android:hint="Search"
+                android:padding="10dp"
+                android:textColorHint="#B0BEC5"
+                android:backgroundTint="#003366" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:background="#F5F5F5"
+            android:id="@+id/BookinglistActivity"
+            android:padding="8dp" />
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bookingactivityprogress"
+            android:layout_marginTop="20dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

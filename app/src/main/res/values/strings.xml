@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">HerWatch</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_profile">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="domestic_violence"><b>Protection of Women from Domestic Violence Act, 2005:</b>
+Provides protection orders, residence orders, and relief for women victims of domestic violence.\n</string>
+    <string name="Sexual_Harassment"><b>Sexual Harassment of Women at Workplace Act, 2013:</b>  Mandates internal complaints committees at workplaces to address harassment.\n\n
+        <b>IPC Section 375:</b> Defines rape and prescribes punishment.\n\n
+        <b>Criminal Law (Amendment) Act, 2013:</b> Expands rape definitions, introduces stricter penalties for sexual crimes, including acid attacks.\n</string>
+    <string name="Anti"><b>Equal Remuneration Act, 1976:</b> Mandates equal pay for equal work for men and women.\n\n
+        <b>Indian Constitution (Articles 14, 15, 16, 39A):</b> Guarantees equality and prohibits sex-based discrimination.\n</string>
+    <string name="Human"><b>Immoral Traffic (Prevention) Act, 1956:</b> Criminalizes trafficking for sexual exploitation.\n\n
+        <b>Criminal Law (Amendment) Act, 2013:</b> Strengthens penalties for trafficking.\n</string>
+    <string name="Laws_on_Rape"><b>IPC Section 375 (Rape):</b> Defines and punishes rape.\n\n
+<b>Section 354 (Assault to outrage modesty):</b> Punishes sexual assault.\n\n
+<b>Section 326A (Acid Attack):</b> Criminalizes acid attacks.\n\n
+        <b>Criminal Law (Amendment) Act, 2013:</b> Strengthens punishments for rape and sexual violence.\n</string>
+    <string name="Reproductive"><b>Medical Termination of Pregnancy (MTP) Act, 1971:</b> Legalizes abortion under certain conditions.\n\n
+        <b>Pre-Conception and Pre-Natal Diagnostic Techniques Act, 1994:</b> Prevents sex-selective abortions.\n\n
+        <b>Maternity Benefit Act, 1961:</b> Provides maternity leave and job protection.\n</string>
+    <string name="Education"><b>Right to Education Act, 2009:</b> Ensures free and compulsory education for all children, including girls.\n\n
+        <b>Beti Bachao Beti Padhao Scheme, 2015:</b> Promotes education for girls and addresses declining child sex ratio\n.</string>
+    <string name="Workplace"><b>Factories Act, 1948:</b> Regulates safety and welfare of women workers.\n\n
+        <b>Sexual Harassment of Women at Workplace Act, 2013:</b> Prevents and addresses harassment.\n\n
+        <b>Maternity Benefit Act, 1961:</b> Provides maternity leave and job protection.\n</string>
+    <string name="Equal"><b>Indian Constitution (Articles 15, 16):</b> Ensures gender equality and prohibits discrimination.\n\n
+        <b>Hindu Succession (Amendment) Act, 2005:</b> Grants equal inheritance rights to daughters.\n</string>
+</resources>

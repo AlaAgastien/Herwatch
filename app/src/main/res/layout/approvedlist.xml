@@ -1,0 +1,97 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bookcard213"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@android:color/white">
+
+        <!-- User Name -->
+        <TextView
+            android:id="@+id/bookdoc213"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="User Name"
+            android:textColor="#022E42"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#D1D1D1"
+            android:layout_marginVertical="8dp"/>
+
+        <!-- Date & Time Container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="12dp">
+
+            <!-- Date -->
+            <TextView
+                android:id="@+id/bookdate213"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textColor="#022E42"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"/>
+
+            <!-- Vertical Divider -->
+            <View
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:background="#D1D1D1"
+                android:layout_marginHorizontal="8dp"/>
+
+            <!-- Time -->
+            <TextView
+                android:id="@+id/booktime213"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Time"
+                android:textColor="#022E42"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <!-- View Details Button -->
+        <Button
+            android:id="@+id/viewdetails13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Details"
+            android:backgroundTint="@color/pink"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            android:paddingVertical="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

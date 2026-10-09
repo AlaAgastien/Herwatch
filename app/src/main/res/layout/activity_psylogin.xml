@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Psylogin">
+
+    <!-- Top Pink Layout with Doctor Image -->
+    <LinearLayout
+        android:id="@+id/pink_layout"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@color/pink"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:src="@drawable/doctorprofile"/>
+    </LinearLayout>
+
+    <!-- White background layout below -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_below="@id/pink_layout"/>
+
+    <!-- Login CardView -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="270dp"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/pink"/>
+
+            <!-- Email -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginTop="15dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:boxStrokeColor="@color/pink"
+                app:hintTextColor="@color/pink">
+
+                <EditText
+                    android:id="@+id/LogEmailPsy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter your Email"
+                    android:inputType="textEmailAddress"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Password -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginTop="15dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:passwordToggleEnabled="true"
+                app:boxStrokeColor="@color/pink"
+                app:passwordToggleTint="@color/pink">
+
+                <EditText
+                    android:id="@+id/LogPassPsy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter your Password"
+                    android:inputType="textPassword"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Forgot Password -->
+            <TextView
+                android:id="@+id/forgotpass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forgot Password?"
+                android:textSize="14sp"
+                android:textColor="@color/pink"
+                android:layout_gravity="end"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-medium"/>
+
+            <!-- Login Button -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/LogButtonPsy"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Log In"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:backgroundTint="@color/pink"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-medium"/>
+
+            <!-- Register Text -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Don't have an account?"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/RegbackPsy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Register Here"
+                    android:textSize="14sp"
+                    android:textColor="@color/pink"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

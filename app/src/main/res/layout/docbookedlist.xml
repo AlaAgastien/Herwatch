@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bookingsList"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <!-- Name TextView -->
+
+        <TextView
+            android:id="@+id/booked_doc_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/pink"
+            android:layout_marginBottom="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"/>
+
+        <!-- Category TextView -->
+        <TextView
+            android:id="@+id/contact_doc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contact"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/pink"
+            android:layout_marginBottom="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"/>
+
+        <!--        &lt;!&ndash; Experience TextView &ndash;&gt;-->
+        <!--        <TextView-->
+        <!--            android:id="@+id/psylistexp"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="Experience"-->
+        <!--            android:textStyle="bold"-->
+        <!--            android:textSize="16sp"-->
+        <!--            android:textColor="@color/pink"-->
+        <!--            android:layout_marginBottom="8dp"-->
+        <!--            android:ellipsize="end"-->
+        <!--            android:maxLines="1"/>-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/psylistwork"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="Work"-->
+        <!--            android:textStyle="bold"-->
+        <!--            android:textSize="16sp"-->
+        <!--            android:textColor="@color/pink"-->
+        <!--            android:layout_marginBottom="8dp"-->
+        <!--            android:ellipsize="end"-->
+        <!--            android:maxLines="1"/>-->
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="VIEW DETAILS "
+            android:id="@+id/booked_ones"
+            >
+
+        </Button>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

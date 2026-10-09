@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".psycologistprofile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/login">
+        </ImageView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:textColor="@color/pink"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp">
+            <EditText
+                android:id="@+id/psyproname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=" Name"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:drawableRight="@drawable/baseline_person_outline_24"
+                android:drawableTint="@color/pink"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp">
+            <EditText
+                android:id="@+id/psyproemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=" Email"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:drawableRight="@drawable/baseline_email_24"
+                android:drawableTint="@color/pink"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp">
+            <EditText
+                android:id="@+id/psyprophone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone number"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:drawableRight="@drawable/baseline_call_24"
+                android:drawableTint="@color/pink"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            >
+
+            <EditText
+                android:id="@+id/psyprowork"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Work Place "
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:drawableRight="@drawable/workplace1"
+                android:drawableTint="@color/pink"
+
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            >
+
+            <EditText
+                android:id="@+id/psyprospecial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Specialization"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:drawableRight="@drawable/workplace1"
+                android:drawableTint="@color/pink"
+
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            >
+
+            <EditText
+                android:id="@+id/psyproexp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Experience "
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:drawableRight="@drawable/experienceremoved"
+                android:drawableTint="@color/pink"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/pink"
+            >
+            <EditText
+                android:id="@+id/psypropass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/psyproupdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="update"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/pink"
+            />
+        <TextView
+            android:id="@+id/prohome12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:textSize="13dp"
+            android:textColor="@color/pink"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            />
+
+
+    </LinearLayout>
+</RelativeLayout>

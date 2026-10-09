@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="1080dp"
+    android:height="1920dp"
+    android:viewportWidth="1080"
+    android:viewportHeight="1920">
+    <!-- White background -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M0,0 H1080 V1920 H0 Z"/>
+
+    <!-- Pink wave on top -->
+    <path
+        android:fillColor="#F37D8D"
+        android:pathData="M0,1000 Q300,900 600,1000 T1080,1000 L1080,0 L0,0 Z"/>
+</vector>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/bookcardfee"
+    android:layout_margin="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <!-- Circular Image on the left side -->
+        <ImageView
+            android:id="@+id/bookimagefee"
+            android:layout_width="50dp"
+            android:layout_height="80dp"
+            android:src="@drawable/booking"
+            android:layout_marginEnd="16dp" />
+
+        <!-- Text layout on the right side -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <!-- Doctor's Name -->
+            <TextView
+                android:id="@+id/bookdocfee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Doctor's Name"
+                android:textColor="#022E42"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_marginBottom="4dp" />
+
+            <!-- Pet's Name -->
+            <TextView
+                android:id="@+id/bookpetfee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pet's Name"
+                android:textColor="#022E42"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_marginBottom="4dp" />
+
+            <!-- Date and Time -->
+
+
+            <!-- Date -->
+            <TextView
+                android:id="@+id/bookdatefee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textColor="#022E42"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="4dp" />
+
+            <!-- Time -->
+
+            <!-- Status Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+
+                android:gravity="center_vertical">
+
+                <!-- Status label -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Status:"
+                    android:textColor="#022E42"
+                    android:textStyle="normal"
+                    android:textSize="19sp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="4dp" />
+
+                <!-- Status text -->
+                <TextView
+                    android:id="@+id/statusfee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pending"
+                    android:textColor="#037E08"
+                    android:textSize="19sp"
+                    android:textStyle="normal"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:layout_marginBottom="4dp" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/pay"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Pay Now"
+                android:textColor="@color/white"
+                android:layout_marginLeft="110dp">
+
+            </Button>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

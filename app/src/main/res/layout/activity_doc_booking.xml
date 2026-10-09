@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DocBooking">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginTop="40dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BOOKING"
+                android:textSize="30dp"
+                android:textColor="@color/pink"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#FDE4E7"
+                android:padding="16dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dr."
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/pink"/>
+                <TextView
+                    android:id="@+id/book_doc_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Doctor Name"
+                    android:textSize="16sp"
+                    android:layout_marginStart="16dp"
+                    android:textColor="@color/pink"/>
+                </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#FDE4E7"
+                android:padding="16dp"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/baseline_call_24"
+                    android:drawableTint="@color/pink"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/pink"/>
+                <TextView
+                    android:id="@+id/book_doc_cont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Doctor contact"
+                    android:textSize="16sp"
+                    android:layout_marginStart="16dp"
+                    android:textColor="@color/pink"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#FDE4E7"
+                android:padding="16dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="8dp">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/pink"
+                    app:boxBackgroundColor="@color/white">
+
+                    <EditText
+                        android:id="@+id/book_patient_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="patient name"
+                        android:textColor="@color/pink">
+
+                    </EditText>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#FDE4E7"
+                android:padding="16dp"
+                android:layout_marginBottom="8dp">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/pink"
+                    app:boxBackgroundColor="@color/white">
+
+                    <EditText
+                        android:id="@+id/book_patient_cont"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="patient contact"
+                        android:textColor="@color/pink">
+
+                    </EditText>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#FDE4E7"
+                android:padding="16dp"
+                android:layout_marginBottom="8dp">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/pink"
+                    app:boxBackgroundColor="@color/white">
+
+                    <EditText
+                        android:id="@+id/book_patient_age"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="patient age"
+                        android:textColor="@color/pink">
+
+                    </EditText>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#FDE4E7"
+            android:layout_marginBottom="8dp">
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingHorizontal="20dp">
+
+                <EditText
+                    android:id="@+id/book_select_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select  date"
+                    android:padding="12dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="#fff"
+                    android:textColor="@color/pink"
+                    android:focusable="false"
+                    android:clickable="true" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sp_time"
+                    android:layout_marginTop="10dp"
+                    android:paddingHorizontal="20dp"
+                    />
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/book_now_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="book now"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

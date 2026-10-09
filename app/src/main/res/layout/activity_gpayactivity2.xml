@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Gpayactivity2"
+    android:background="#F8E6E8">
+    <LinearLayout
+        android:layout_margin="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Payment form"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="27sp"
+            android:fontFamily="serif"
+            android:layout_marginTop="60dp"
+            android:textColor="@color/pink" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp">
+            <EditText
+                android:hint="Doctor Name"
+                android:id="@+id/dnameu"
+                android:textSize="15sp"
+                android:background="@color/white"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp">
+            <EditText
+                android:hint="Patient Name"
+                android:id="@+id/pname11ur"
+                android:textSize="15sp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="10dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <!--        <EditText-->
+        <!--            android:hint="Patient Place"-->
+        <!--            android:id="@+id/pp111"-->
+        <!--            android:textSize="15sp"-->
+        <!--            android:layout_marginTop="20dp"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:padding="10dp" />-->
+
+        <!--        <EditText-->
+        <!--            android:hint="Date"-->
+        <!--            android:id="@+id/da11"-->
+        <!--            android:textSize="15sp"-->
+        <!--            android:layout_marginTop="20dp"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:padding="10dp" />-->
+
+        <!--        <EditText-->
+        <!--            android:hint="Slot Time"-->
+        <!--            android:id="@+id/ti"-->
+        <!--            android:textSize="15sp"-->
+        <!--            android:layout_marginTop="20dp"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:padding="10dp" />-->
+
+        <!--        <EditText-->
+        <!--            android:hint="Amount"-->
+        <!--            android:text="300 Rupees"-->
+        <!--            android:textSize="15sp"-->
+        <!--            android:layout_marginTop="20dp"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:padding="10dp" />-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:background="@color/white"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fee"
+                android:background="#E2EFF1"
+                android:layout_marginEnd="8dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/amount_etcu"
+                android:text="200"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:background="#E2EFF1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp">
+
+            <EditText
+                android:hint="Enter UPI ID"
+                android:id="@+id/upi_idcu"
+                android:background="@color/white"
+                android:textSize="15sp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:id="@+id/sendcu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/pink"
+            android:text="Send"
+            android:padding="10dp"
+            android:layout_marginTop="30dp" />
+    </LinearLayout>
+
+</RelativeLayout>
